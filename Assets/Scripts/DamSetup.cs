@@ -16,7 +16,7 @@ public class DamSetup : MonoBehaviour
             }
         }
 
-        for(int i = 0; i < container.transform.childCount; i++)
+       /* for(int i = 0; i < container.transform.childCount; i++)
         {
             GameObject child = container.transform.GetChild(i).gameObject;
             var collider = child.AddComponent<MeshCollider>();
@@ -24,7 +24,7 @@ public class DamSetup : MonoBehaviour
             var body = child.AddComponent<Rigidbody>();
            // body.isKinematic = true;
            // body.useGravity = false;
-        }
+        }*/
         
         
     }

@@ -22,7 +22,7 @@ public class PullZoneHelper : MonoBehaviour
     {
         var body = other.GetComponent<Rigidbody>();
         body.gameObject.layer = LayerMask.NameToLayer("Moving");
-        //body.isKinematic = false;
+        body.isKinematic = false;
         body.useGravity = true;
         body.AddForce((PullEndLocation.transform.position - other.transform.position) * PullForce);
     }
